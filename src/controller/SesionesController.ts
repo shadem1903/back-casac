@@ -152,7 +152,7 @@ class SesionesController {
   
         // Busca las sesiones que coinciden con el id proporcionado en la propiedad pertenece_a
         const sesionesEncontradas = await sesionesRepository
-          .whereEqualTo('0.pertenece_a', id)
+          .whereEqualTo('pertenece_a', id)
           .find();
   
         // Verifica si se encontraron sesiones y responde en consecuencia
