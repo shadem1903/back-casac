@@ -138,7 +138,7 @@ class SesionesController {
   }
 
   async buscarSesionPorId(req: Request, res: Response) {
-      try {
+      /* try {
         const { id } = req.params;
   
         if (!id) {
@@ -170,7 +170,8 @@ class SesionesController {
         return res.status(500).json({
           error: 'Error interno del servidor.',
         });
-      }
+      } */
+      return true;
   }
 
   async eliminarSesion(req: Request, res: Response) {
